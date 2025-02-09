@@ -93,7 +93,7 @@ class BasketballGame extends Forge2DGame with HasCollisionDetection, CollisionCa
     isLoaded = true;
     updatePositions();
     await player.setAsset('assets/audio/goal.wav');
-    player.play();
+    //player.play();
   }
 
   @override
@@ -108,14 +108,14 @@ class BasketballGame extends Forge2DGame with HasCollisionDetection, CollisionCa
   void updatePositions() {
     if (!isLoaded) return;
 
-    hoop.position = Vector2((screenSize.x - hoop.size.x) / 2, screenSize.y - 620);
+    hoop.position = Vector2((screenSize.x - hoop.size.x) / 2, screenSize.y - 600);
     basketball.position = Vector2((screenSize.x - basketball.size.x) / 2, screenSize.y - 150);
     arrow.position =  Vector2((screenSize.x - basketball.size.x) / 2, screenSize.y - 100);
-    aright.position = Vector2((screenSize.x + 400) / 2, screenSize.y - 70);
-    aleft.position = Vector2((screenSize.x - 500) / 2, screenSize.y - 70);
+    aright.position = Vector2((screenSize.x + 220) / 2, screenSize.y - 70);
+    aleft.position = Vector2((screenSize.x - 310) / 2, screenSize.y - 70);
     powermeter.position = Vector2((screenSize.x - 200) / 2, screenSize.y - 50);
-    dot1.position = Vector2((screenSize.x - hoop.size.x) / 2 + 43, screenSize.y - 515);
-    dot2.position = Vector2((screenSize.x - hoop.size.x) / 2 + 168, screenSize.y - 515);
+    dot1.position = Vector2((screenSize.x - hoop.size.x) / 2 + 43, screenSize.y - 495);
+    dot2.position = Vector2((screenSize.x - hoop.size.x) / 2 + 168, screenSize.y - 495);
     score.position =  Vector2((screenSize.x - hoop.size.x) / 2 + 100, screenSize.y - 440);
     score.scoreText.position = Vector2(60, 20);
   }

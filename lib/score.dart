@@ -19,12 +19,12 @@ class Score extends PositionComponent
 
   @override
   Future<void> onLoad() async {
-    debugMode = true;
     add(RectangleHitbox(collisionType: CollisionType.passive)); // 🔹 Add collision hitbox
 
     scoreText = TextComponent(
       text: 'SCORE: $score',
       anchor: Anchor.center,
+      size: Vector2(gameRef.size.x * 0.1, gameRef.size.y * 0.05),
       position: Vector2(0, 0), // Adjust position if needed
     );
     scoreText.textRenderer = TextPaint(
