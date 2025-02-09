@@ -1,0 +1,38 @@
+name: basketball_game
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flame: ^1.23.0
+  flame_forge2d: ^0.18.2+4
+  universal_platform: ^1.1.0
+  forge2d: ^0.13.1
+  flame_audio: ^1.0.0
+  just_audio: ^0.9.39
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+
+  assets:
+    - assets/Images/basketball-ball.png
+    - assets/Images/basketball-hoop.png
+    - assets/Images/up-arrow.png
+    - assets/Images/back.png
+    - assets/Images/next.png
+    - assets/audio/ball.wav
+    - assets/audio/goal.wav
+    - assets/audio/goal2.wav
+    - assets/audio/net.wav
+
+
+  uses-material-design: true
