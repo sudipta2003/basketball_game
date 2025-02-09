@@ -24,11 +24,11 @@ dev_dependencies:
 flutter:
 
   assets:
-    - assets/Images/basketball-ball.png
-    - assets/Images/basketball-hoop.png
-    - assets/Images/up-arrow.png
-    - assets/Images/back.png
-    - assets/Images/next.png
+    - assets/images/basketball-ball.png
+    - assets/images/basketball-hoop.png
+    - assets/images/up-arrow.png
+    - assets/images/back.png
+    - assets/images/next.png
     - assets/audio/ball.wav
     - assets/audio/goal.wav
     - assets/audio/goal2.wav
